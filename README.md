@@ -6,9 +6,10 @@
 <br>
 
 <p>
-  #Posizionatevi su una cartella desiderata<br>
+  #Posizionatevi su una cartella desiderata<br><br>
   mkdir ~/Media <br>
-  apt install python3.13-venv -y <br>
+  sudo apt install python3.13-venv -y <br>
+  sudo apt install python3 python3-pip ffmpeg -y <br>
   python3 -m venv myenv <br>
   source myenv/bin/activate<br>
   export PYTHONIOENCODING=utf-8<br>
