@@ -1,0 +1,109 @@
+{
+    "DEFAULT": {
+        "debug": false,
+        "show_message": true,
+        "clean_console": true,
+        "show_trending": false,
+        "use_api": true,
+        "not_close": false,
+        "telegram_bot": false,
+        "download_site_data": true,
+        "validate_github_config": true,
+        "bypass_dns": true,
+        "fetch_domain_online": true,
+        "show_device_info": true
+    },
+    "OUT_FOLDER": {
+        "root_path": "Video",
+        "movie_folder_name": "Movie",
+        "serie_folder_name": "Serie",
+        "anime_folder_name": "Anime",
+        "map_episode_name": "%(season)x%(episode)",
+        "add_siteName": false
+    },
+    "QBIT_CONFIG": {
+        "host": "192.168.1.51",
+        "port": "6666",
+        "user": "admin",
+        "pass": "adminadmin"
+    },
+    "M3U8_DOWNLOAD": {
+        "default_video_workers": 8,
+        "default_audio_workers": 12,
+        "segment_timeout": 25,
+        "specific_list_audio": [
+            "ita"
+        ],
+        "download_subtitle": false,
+        "merge_subs": true,
+        "specific_list_subtitles": [
+            "ita"
+        ],
+        "cleanup_tmp_folder": true,
+        "get_only_link": false,
+        "limit_segment": 0,
+        "enable_retry": true
+    },
+    "M3U8_CONVERSION": {
+        "use_codec": false,
+        "use_vcodec": true,
+        "use_acodec": true,
+        "use_bitrate": true,
+        "use_gpu": false,
+        "default_preset": "veryslow",
+        "force_resolution": "720p",
+        "param_video": [
+            "-c:v",
+            "libx265",
+            "-crf",
+            "27",
+            "-preset",
+            "veryslow"
+        ],
+        "param_audio": [
+            "-c:a",
+            "acc",
+            "-b:a",
+            "128k"
+        ],
+        "param_final": [
+            "-c",
+            "copy"
+        ],
+        "extension": ".mp4",
+        "param_subtitles": [
+            "-c:s",
+            "mov_text"
+        ],
+        "subtitle_disposition": false,
+        "subtitle_disposition_language": "ita"
+    },
+    "M3U8_PARSER": {
+        "force_resolution": "720p"
+    },
+    "REQUESTS": {
+        "verify": false,
+        "timeout": 20,
+        "max_retry": 40
+    },
+    "HOOKS": {
+        "pre_run": [],
+        "post_run": []
+    },
+    "SITE_LOGIN": {
+        "crunchyroll": {
+            "etp_rt": "",
+            "x_cr_tab_id": "",
+            "device_id": ""
+        },
+        "mediasetinfinity": {
+            "beToken": "",
+            "username": "",
+            "password": ""
+        },
+        "tubi": {
+            "email": "",
+            "password": ""
+        }
+    }
+}
