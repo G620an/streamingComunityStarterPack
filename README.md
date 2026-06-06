@@ -8,6 +8,7 @@
 <p>
   #Posizionatevi su una cartella desiderata<br>
   mkdir ~/Media <br>
+  apt install python3.13-venv -y <br>
   python3 -m venv myenv <br>
   source myenv/bin/activate<br>
   export PYTHONIOENCODING=utf-8<br>
