@@ -34,7 +34,7 @@
 <br>
 
 <p>
-  #Scaricate tutti i file caricati nella repository e sostituiteli a quelli scaricati da streamingcomunity (soprattutto d.py)<br>
+  #Scaricate tutti i file caricati nella repository e sostituiteli a quelli scaricati da streamingcomunity (soprattutto d.py)<br><br>
   source myenv/bin/activate<br>
   export PYTHONIOENCODING=utf-8<br>
   python3 d.py<br>
